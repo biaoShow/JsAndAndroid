@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.biao.jsandandroid.MainActivity"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/btn_pantojs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="android调用js方法(原生)"/>
+    <WebView
+        android:id="@+id/wv_jsandandroidtest"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+    </WebView>
+    <Button
+        android:id="@+id/btn_antojs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="android调用js方法(框架)"/>
+    <com.github.lzyzsd.jsbridge.BridgeWebView
+        android:id="@+id/bridgeView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+    </com.github.lzyzsd.jsbridge.BridgeWebView>
+
+</LinearLayout>

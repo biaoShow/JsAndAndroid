@@ -1,0 +1,23 @@
+<html>
+<head>
+    <title>JsTOAndroid</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <script src="main.js" type="text/javascript"></script>
+    <script src="Test.js" type="text/javascript"></script>
+</head>
+<body>
+<div>
+    <button id="getAndroidData">getAndroidData</button>
+    <button id="setAndroidData">setAndroidData</button>
+    <button id="androidtojs">js调用js方法</button>
+    <button id="jstoandroid">js调用android方法(原生)</button>
+</div>
+<script>
+    document.getElementById("getAndroidData").onclick=function(){getAndroidData()};
+    document.getElementById("setAndroidData").onclick=function(){setAndroidData()};
+    document.getElementById("androidtojs").onclick=function(){jsMethod()};
+    document.getElementById("jstoandroid").onclick=function(){jsToAndroidMethod()};
+
+</script>
+</body>
+</html>
